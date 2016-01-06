@@ -1,0 +1,46 @@
+﻿<ion-pane>
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div class="buttons" ng-controller="goCtrl">
+            <button class="button" ng-click='go("/avaliacoes/lista_avaliacoes")'>
+                <i class="icon ion-android-arrow-back"></i>
+            </button>
+        </div>
+        <h1 class="title">Cadastro de Avaliação</h1>
+        <div class="buttons" ng-controller="goCtrl">
+            <button class="button" ng-click='go("/avaliacoes/lista_avaliacoes")'>
+                <i class="icon ion-android-done"></i>
+            </button>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <label class="item item-input item-select">
+            <div class="input-label">
+                Tipo:
+            </div>
+            <select id="cod_tipo_avaliacao">
+                <option selected>Default</option>
+                <option>Green</option>
+                <option>Red</option>
+            </select>
+        </label>
+
+        <label class="item item-input item-select">
+            <div class="input-label">
+                Disciplina:
+            </div>
+            <select id="cod_tipo_avaliacao">
+                <option selected>Default</option>
+                <option>Green</option>
+                <option>Red</option>
+            </select>
+        </label>
+
+        <label class="item item-input">
+            <span class="input-label">Valor</span>
+            <input type="number" id="valor_avaliacao">
+        </label>
+
+    </ion-content>
+    <ion-footer-bar class="bar-positive">
+    </ion-footer-bar>
+</ion-pane>

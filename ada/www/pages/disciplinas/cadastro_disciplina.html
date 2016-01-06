@@ -1,0 +1,39 @@
+﻿<ion-pane>
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div class="buttons" ng-controller="goCtrl">
+            <button class="button" ng-click='go("/disciplinas/lista_disciplinas")'>
+                <i class="icon ion-android-arrow-back"></i>
+            </button>
+        </div>
+        <h1 class="title">Cadastro de Disciplina</h1>
+        <div class="buttons" ng-controller="goCtrl">
+            <button class="button" ng-click='go("/disciplinas/lista_disciplinas")'>
+                <i class="icon ion-android-done"></i>
+            </button>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <label class="item item-input">
+            <span class="input-label">Descrição</span>
+            <input type="text" id="descricao_disciplina">
+        </label>
+        <label class="item item-input">
+            <span class="input-label">Abraviação</span>
+            <input type="text" id="desc_disciplina">
+        </label>
+        <label class="item item-input">
+            <span class="input-label">Data Início</span>
+            <input type="date" id="data_inicio">
+        </label>
+        <label class="item item-input">
+            <span class="input-label">Pontuação Máxima</span>
+            <input type="number" id="pontuacao_max">
+        </label>
+        <label class="item item-input">
+            <span class="input-label">Pontuação Mínima</span>
+            <input type="number" id="pontuacao_min">
+        </label>
+    </ion-content>
+    <ion-footer-bar class="bar-positive">
+    </ion-footer-bar>
+</ion-pane>

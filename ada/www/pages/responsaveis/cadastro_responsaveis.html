@@ -1,0 +1,39 @@
+﻿<ion-pane>
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div class="buttons" ng-controller="goCtrl">
+            <button class="button" ng-click='go("/responsaveis/lista_responsaveis")'>
+                <i class="icon ion-android-arrow-back"></i>
+            </button>
+        </div>
+        <h1 class="title">Cadastro de Responsável</h1>
+        <div class="buttons" ng-controller="goCtrl">
+            <button class="button" ng-click='go("/responsaveis/lista_responsaveis")'>
+                <i class="icon ion-android-done"></i>
+            </button>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <label class="item item-input">
+            <span class="input-label">Nome</span>
+            <input type="text" id="nome_responsavel">
+        </label>   
+        <label class="item item-input">
+            <span class="input-label">Sobrenome</span>
+            <input type="text" id="sobrenome_responsavel">
+        </label>
+        <label class="item item-input">
+            <span class="input-label">Email</span>
+            <input type="email" id="email_responsavel">
+        </label>
+        <label class="item item-input">
+            <span class="input-label">Telefone</span>
+            <input type="tel" id="telefone_um">
+        </label>
+        <label class="item item-input">
+            <span class="input-label">Telefone</span>
+            <input type="tel" id="telefone_dois">
+        </label>
+    </ion-content>
+    <ion-footer-bar class="bar-positive">
+    </ion-footer-bar>
+</ion-pane>

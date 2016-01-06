@@ -1,0 +1,68 @@
+﻿<ion-pane>
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div class="buttons" ng-controller="goCtrl">
+            <button class="button" ng-click='go("/alunos/lista_alunos")'>
+                <i class="icon ion-android-arrow-back"></i>
+            </button>
+        </div>
+        <h1 class="title">Cadastro de Aluno</h1>
+        <div class="buttons" ng-controller="goCtrl">
+            <button class="button" ng-click='go("/alunos/lista_alunos")'>
+                <i class="icon ion-android-done"></i>
+            </button>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <div class="row">
+            <div class="col">
+                <a class="item item-thumbnail" href="#">
+                    <img src="#">
+                </a>
+            </div>
+            <div class="col col-75">
+                <label class="item item-input">
+                    <span class="input-label">Nome</span>
+                    <input type="text" id="nome_aluno">
+                </label>
+            </div>
+        </div>
+        <label class="item item-input">
+            <span class="input-label">Sobrenome</span>
+            <input type="text" id="sobrenome_aluno">
+        </label>
+        <label class="item item-input">
+            <span class="input-label">Telefone</span>
+            <input type="tel" id="telefone_aluno">
+        </label>
+        <label class="item item-input">
+            <span class="input-label">Email</span>
+            <input type="email" id="email_aluno">
+        </label>
+        <label class="item item-input item-select">
+            <div class="input-label">
+                Turma
+            </div>
+            <select id="cod_turma">
+                <option selected>Default</option>
+                <option>Green</option>
+                <option>Red</option>
+            </select>
+        </label>
+        <div class="row">
+            <div class="col">
+                <!--Adicionar os pais-->
+                <button class="button button-positive" ng-click="showPopup()">
+                    <i class="icon ion-woman"></i>
+                </button>
+            </div>
+            <div class="col col-75">
+                <label class="item item-input">
+                    <span class="input-label">Matricula</span>
+                    <input type="text" id="matricula">
+                </label>
+            </div>
+        </div>
+    </ion-content>
+    <ion-footer-bar class="bar-positive">
+    </ion-footer-bar>
+</ion-pane>

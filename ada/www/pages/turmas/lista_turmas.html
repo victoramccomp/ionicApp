@@ -1,0 +1,43 @@
+﻿
+<ion-pane>
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div class="buttons" ng-controller="goCtrl">
+            <button class="button" ng-click='go("/home")'>
+                <i class="icon ion-ios-home"></i>
+            </button>
+        </div>
+        <h1 class="title">Turmas</h1>
+        <div class="buttons" ng-controller="goCtrl">
+            <button class="button" ng-click='go("/turmas/cadastro_turmas")'>
+                <i class="icon ion-ios-plus-empty"></i>
+            </button>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <label class="item item-input">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="search" placeholder="Buscar turma..." ng-model="searchString">
+        </label>
+        <ion-list>
+            <!--<div class="list">-->
+
+                <div ng-repeat="turma in turmas | searchForTurma:searchString" class="item item-button-right item-text-wrap">
+
+                        <div class="item-content no-padding ">
+                            <h2>{{turma.descricao_turma}}</h2>
+                        </div>
+                       
+                        <div class="buttons no-padding">
+                            <button class="button button-positive" ng-click="showPopup()">
+                                <i class="icon ion-android-more-vertical"></i>
+                            </button>
+                        </div>
+                    
+                </div>
+
+            <!--</div>-->
+        </ion-list>
+    </ion-content>
+    <ion-footer-bar class="bar-positive">
+    </ion-footer-bar>
+</ion-pane>
