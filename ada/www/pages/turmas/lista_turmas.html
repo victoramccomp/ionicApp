@@ -1,6 +1,6 @@
 ﻿
 <ion-pane>
-    <ion-header-bar align-title="center" class="bar-positive">
+    <ion-header-bar class="bar-positive">
         <div class="buttons" ng-controller="goCtrl">
             <button class="button" ng-click='go("/home")'>
                 <i class="icon ion-ios-home"></i>
@@ -21,18 +21,11 @@
         <ion-list>
             <!--<div class="list">-->
 
-                <div ng-repeat="turma in turmas | searchForTurma:searchString" class="item item-button-right item-text-wrap">
+                <div ng-repeat="turma in turmas | searchForTurma:searchString" class="item item-button-right item-text-wrap" ng-click="showPopupAcaoTurma()">
 
                         <div class="item-content no-padding ">
                             <h2>{{turma.descricao_turma}}</h2>
                         </div>
-                       
-                        <div class="buttons no-padding">
-                            <button class="button button-positive" ng-click="showPopup()">
-                                <i class="icon ion-android-more-vertical"></i>
-                            </button>
-                        </div>
-                    
                 </div>
 
             <!--</div>-->
